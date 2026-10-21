@@ -7,6 +7,9 @@ forecasting accepted pickups one hour ahead across recognised pickup zones.
 
 The project combines Python data preparation, SQL analysis, Power BI reporting and machine learning using decision tree and random forest regressors.
 
+## Dashboard Preview
+![NYC Taxi Power BI Dashboard](images/dashboard_overview.png)
+
 ## Tools
 
 - Python, Pandas and NumPy
