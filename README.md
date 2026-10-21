@@ -6,7 +6,7 @@ This project analyses August 2026 NYC yellow taxi records and explores
 forecasting accepted pickups one hour ahead across recognised pickup zones.
 
 It combines Python data preparation, SQL analysis, Power BI reporting
-and introductory machine learning.
+and machine learning, used decision tree and random forest model.
 
 ## Tools
 
