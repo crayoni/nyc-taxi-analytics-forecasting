@@ -75,15 +75,44 @@ Methods compared:
 The validation-selected trained model was refitted on August 8–24.
 If the baseline was selected, no fitting was required.
 
-## Exploratory Results
+## Exploratory Machine Learning Results
 
-- Validation-selected approach: Random forest
-- Test MAE: 414.04 pickups per hour
-- Weekly baseline test MAE: 571.23 pickups per hour
-- Mean signed error: -230.82 pickups per hour
+The random forest achieved the lowest validation MAE among the
+approaches compared. It was then refitted on August 8–24 and evaluated
+on August 25–31.
 
-MAE measures average absolute error. Signed error is prediction minus
-actual, so a positive mean indicates overprediction on average.
+| Approach | Test MAE: pickups per hour |
+|---|---:|
+| Same-hour-last-week baseline | 571.23 |
+| Random forest | 414.04 |
+
+The random forest reduced MAE by approximately **27.5%** relative
+to the weekly baseline during this exploratory test period.
+
+Its mean signed error was **−230.82 pickups per hour**. With error
+defined as prediction minus actual, this indicates underprediction
+by approximately 231 pickups per hour on average.
+
+### Actual vs Predicted Pickups
+
+![Actual versus predicted hourly pickups](images/selected_approach_actual_vs_predicted.png)
+
+### Data Science and ML Methods
+
+- Engineered pickup lags of 1, 24 and 168 hours.
+- Created rolling averages using only earlier hours.
+- Added calendar features for the hour being predicted.
+- Trained decision tree and random forest regression models.
+- Selected the approach using chronological validation.
+- Analysed absolute errors and systematic overprediction or
+  underprediction.
+
+### Evaluation Qualification
+
+The August test period was inspected during development.
+These scores are exploratory, rather than an untouched final
+evaluation. Additional chronological data is needed to assess
+performance beyond this month.
 
 ## How to Run
 
