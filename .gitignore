@@ -1,0 +1,14 @@
+.ipynb_checkpoints/
+__pycache__/
+.venv/
+venv/
+.env
+
+# Raw trip data and local database
+*.parquet
+*.db
+*.db-journal
+data/raw/
+
+# Generated modelling dataset
+data/processed/hourly_model_data.csv
