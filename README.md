@@ -86,6 +86,19 @@ The project:
 The fact table contains 7,368 date-zone rows. The accepted pickup
 counts reconcile to the source-level accepted trip count.
 
+### Data-quality accounting and descriptive finding
+
+Of the 3,336,716 source rows, 15 were outside August or had a missing
+pickup timestamp, and 7,188 August rows had unrecognised pickup zones.
+The remaining 3,329,513 records form the accepted-pickup population.
+For fare, distance and duration analysis, a separate screening step
+retained 3,149,299 records.
+
+In the August sample, average daily weekend pickups were 109,422.80,
+compared with 106,442.14 on weekdays — approximately **2.8% higher**.
+This is a descriptive comparison for one month, not evidence that
+weekend status causes higher demand.
+
 ### Selected exploratory visualisations
 
 **Daily pickup trend**
