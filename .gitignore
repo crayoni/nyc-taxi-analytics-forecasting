@@ -1,14 +1,21 @@
-.ipynb_checkpoints/
-__pycache__/
+# Python environments and caches
 .venv/
 venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
 .env
+.env.*
 
-# Raw trip data and local database
+# Local data, processed exports and SQLite database
+/data/
 *.parquet
 *.db
 *.db-journal
-data/raw/
+*.sqlite
+*.sqlite3
 
-# Generated modelling dataset
-data/processed/hourly_model_data.csv
+# Generated model and cache artifacts
+*.joblib
+*.pkl
+*.pickle
